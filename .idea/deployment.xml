@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="tdiw-e8">
+  <component name="PublishConfigData" serverName="Sabonsai">
     <serverData>
-      <paths name="mjkl">
+      <paths name="Sabonsai">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="tdiw-e8">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/." local="$PROJECT_DIR$" web="http://deic-docencia.uab.cat" />
           </mappings>
         </serverdata>
       </paths>
