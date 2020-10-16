@@ -1,0 +1,153 @@
+/* **************
+   **** Main ****
+   ************** */
+html {
+    font-size: 62.25%;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #eaeded;
+}
+
+/* **************
+   *** Layout ***
+   ************** */
+
+#layout {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "carrousel"
+        "nav"
+        "products"
+        "footer";
+}
+
+.carrousel {
+    grid-area: carrousel;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.products {
+    grid-area: products;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* **************
+   *** Header ***
+   ************** */
+
+#header-container {
+    background-color: #005005;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#header-container ul{
+    display: flex;
+    margin: 0;
+    align-items: stretch;
+    list-style: none;
+}
+
+#header-container .logo {
+    height: 6em;
+    width: auto;
+    margin: 0.3em 0.3em 0.3em 1em;
+}
+
+#header-container a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    font-size: 2em;
+}
+
+#header-container li:hover {
+    background-color: #004805;
+    cursor: pointer;
+}
+
+#header-container .icon{
+    padding: 0.7em;
+}
+
+#header-container .icon img {
+    width: 1.5em;
+    height: auto;
+}
+
+/* ******************
+   *** Navigation ***
+   ****************** */
+
+
+#nav-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #005005;
+    padding: 0;
+}
+
+#nav-container a{
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+    font-size: 2em;
+}
+
+#nav-container li:hover {
+    background-color: #004805;
+    cursor: pointer;
+}
+
+.product-wrapper {
+    background-color: white;
+    padding: 2em;
+    display: grid;
+    width: 256px;
+    margin: 4em;
+    grid-template-areas:
+        "image image"
+        "name name"
+        "price buy";
+}
+
+.product-image {
+    grid-area: image;
+    width: 256px;
+    height: 256px;
+}
+
+.product-name {
+    grid-area: name;
+    font-size: 2em;
+}
+
+.product-price {
+    grid-area: price;
+    font-size: 2em;
+}
+
+.product-buy {
+    grid-area: buy;
+}
+
