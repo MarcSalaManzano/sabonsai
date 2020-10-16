@@ -3,52 +3,69 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes"/>
-
-    <!--Style-->
-    <!--typo--> <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,700" rel="stylesheet"/>
+    <link href="../css/login.css" rel="stylesheet">
 
 </head>
 
 <body>
-<header>
-    <h1>SABONSAI</h1>
+<div id="layoutLogin">
 
-</header>
-<section id="formRegister">
-    <header>
-        <h3> Registra una nova compte</h3>
+    <header style="grid-area: Head">
+        <h1>SABONSAI</h1>
+
     </header>
+    <section id="formRegister" style="grid-area: Register">
+        <header>
+            <h3> Registra una nova compte</h3>
+        </header>
 
-    <form action="" method="post">
+        <form action="" method="post">
 
-        <label for="userReg"> Nom d'usuari: </label> <input type="text" name="userReg" id="userReg"> <br/>
-        <label for="email"> Email: <input type="text" name="email" id="email"> </label> <br/>
-        <label for="passReg"> Password: <input type="password" name="passReg" id="passReg"> </label> <br/>
-        <label for="adress"> Adreça: <input type="password" name="adress" id="adress"> </label> <br/>
-        <label for="poblation"> Població: <input type="text" name="poblation" id="poblation"> </label> <br/>
-        <label for="CP"> Codi Postal: <input type="text" name="CP" id="CP"> </label> <br/>
+            <label for="user"> Nom d'usuari: </label> <input type="text" name="user" id="user"
+                                                                required>
+            <br/>
+            <label for="emailReg"> Email: </label> <input type="email" name="emailReg" id="emailReg"
+                                                                required>
+            <br/>
+            <label for="passReg"> Password: </label> <input type="password" name="passReg" id="passReg"
+                                                                required
+                                                                pattern="[A-Za-z0-9]+" >
+            <br/>
+            <label for="adress"> Adreça: </label> <input type="text" name="adress" id="adress"
+                                                                required
+                                                                pattern="[A-Za-z0-9\s]+" maxlength="30">
+            <br/>
+            <label for="poblation"> Població: </label> <input type="text" name="poblation" id="poblation"
+                                                                required
+                                                                pattern="[A-Za-z0-9\s]+" maxlength="30">
+            <br/>
+            <label for="CP"> Codi Postal: </label> <input type="text" name="CP" id="CP"
+                                                                required
+                                                                pattern="[0-9]{5}">
+            <br/>
 
-        <input type="submit" value="Registrar-se">
-
-
-    </form>
-
-</section>
-
-<section id="formLogin">
-    <header>
-        <h3> Ja tens compte? Entra-hi</h3>
-    </header>
-
-    <form action="" method="post">
-        <label for="userLogin"> Nom d'usuari: </label> <input type="text" name="userLogin" id="userLogin"> <br/>
-        <label for="passLogin"> Password: <input type="password" name="passLogin" id="passLogin"> </label> <br/>
-        <input type="submit" value="Contrasenya perduda">   <input type="submit" value="Login">
-
-    </form>
-
-</section>
+            <input type="submit" value="Registrar-se">
 
 
+        </form>
 
+    </section>
+
+    <section id="formLogin" style="grid-area: Login">
+        <header>
+            <h3> Ja tens compte? Entra-hi</h3>
+        </header>
+
+        <form action="" method="post">
+            <label for="emailLogin"> Correu electrònic: </label> <input type="text" name="emailLogin" id="emailLogin" required> <br/>
+            <label for="passLogin"> Password: </label>  <input type="password" name="passLogin" id="passLogin" required> <br/>
+            <input type="submit" value="Contrasenya perduda">   <input type="submit" value="Login">
+
+        </form>
+
+    </section>
+
+
+</div>
 </body>
