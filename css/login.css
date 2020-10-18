@@ -26,21 +26,24 @@ input:focus {
 input {
     width: 50%;
     padding: 0.5em 0.5em;
-    margin: 0.5em 0em;
+    margin-top: 0.5em;
     box-sizing: border-box;
     float: initial;
+}
+input[type=submit] {
+    width: 25%;
 }
 
 label {
     display: inline-block;
-    float: left;
-    width: 75%;
-    margin-top: 0.02em;
+    float: start;
+    width: 50%;
     font-size: 1.1em;
     font-family: sans-serif;
     font-weight: bold;
     text-align: left;
-    margin-left: 10em;
+
+
 }
 
 section header {
