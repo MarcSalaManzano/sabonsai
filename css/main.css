@@ -151,3 +151,29 @@ body {
     grid-area: buy;
 }
 
+
+/* **************
+   *** Footer ***
+   ************** */
+.footer {
+    bottom: 0;
+    background-color: #005005;
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+}
+.footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer p,a {
+    color: #eee;
+}
+
+.footer p,a,h2 {
+    margin: 0.5em;
+}
