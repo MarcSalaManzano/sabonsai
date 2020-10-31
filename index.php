@@ -1,20 +1,18 @@
 <?php
-$accio = $_GET['accio'];
+
+@$accio = $_GET['accio'];
 
 switch($accio) {
-    case 'portada':
-        include __DIR__.'/resource_portada';
-        break;
     case 'login':
-        include __DIR__.'/resource_login';
+        include __DIR__.'/resource_login.php';
         break;
     case 'perfil':
-        include __DIR__.'/resource_perfil';
+        include __DIR__.'/resource_perfil.php';
         break;
     case 'carro':
-        include __DIR__.'/resource_carro';
+        include __DIR__.'/resource_carro.php';
         break;
     default:
-        include __DIR__.'/resource_portada';
+        include __DIR__.'/resource_portada.php';
         break;
 } ?>

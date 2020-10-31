@@ -5,6 +5,7 @@
     <title>Sabonsai | Home</title>
     <!--Style-->
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
     <!--typo-->
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,700" rel="stylesheet"/>
 </head>

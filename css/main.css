@@ -11,43 +11,6 @@ body {
 }
 
 /* **************
-   *** Layout ***
-   ************** */
-
-#layout {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "carrousel"
-        "nav"
-        "products"
-        "footer";
-}
-
-.carrousel {
-    grid-area: carrousel;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-.header {
-    grid-area: header;
-}
-
-.nav {
-    grid-area: nav;
-}
-
-.products {
-    grid-area: products;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-/* **************
    *** Header ***
    ************** */
 
@@ -92,65 +55,6 @@ body {
     width: 1.5em;
     height: auto;
 }
-
-/* ******************
-   *** Navigation ***
-   ****************** */
-
-
-#nav-container {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background-color: #005005;
-    padding: 0;
-}
-
-#nav-container a{
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    color: white;
-    font-size: 2em;
-}
-
-#nav-container li:hover {
-    background-color: #004805;
-    cursor: pointer;
-}
-
-.product-wrapper {
-    background-color: white;
-    padding: 2em;
-    display: grid;
-    width: 256px;
-    margin: 4em;
-    grid-template-areas:
-        "image image"
-        "name name"
-        "price buy";
-}
-
-.product-image {
-    grid-area: image;
-    width: 256px;
-    height: 256px;
-}
-
-.product-name {
-    grid-area: name;
-    font-size: 2em;
-}
-
-.product-price {
-    grid-area: price;
-    font-size: 2em;
-}
-
-.product-buy {
-    grid-area: buy;
-}
-
 
 /* **************
    *** Footer ***
