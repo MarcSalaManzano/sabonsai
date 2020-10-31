@@ -10,15 +10,15 @@
 <body>
 
 <div id="layoutLogin">
-    <header id="header-container">
+    <header id="header-container" style="grid-area: Head">
         <?php require __DIR__ . '/controller/header.php'; ?>
     </header>
 
-    <section id="formRegister">
+    <section id="formRegister" style="grid-area: Register">
         <?php require __DIR__ . '/controller/registre.php'; ?>
     </section>
 
-    <section id="formLogin">
+    <section id="formLogin" style="grid-area: Login">
         <?php require __DIR__ . '/controller/login.php'; ?>
     </section>
 </div>

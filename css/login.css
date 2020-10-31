@@ -2,7 +2,6 @@
     display: grid;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    padding: 5px;
     grid-template-areas:
         'Head Head'
         'Register Login'
