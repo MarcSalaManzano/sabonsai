@@ -10,6 +10,6 @@ if(isset($_POST['submit'])) {
         require __DIR__ . '/../view/login.php';
 }
 else
-    require __DIR__ . '/../view/login.php.php';
+    require __DIR__ . '/../view/login.php';
 
 ?>
