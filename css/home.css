@@ -50,15 +50,21 @@
     padding: 0;
 }
 
-#nav-container a{
+
+
+.navigation-button {
+    background-color: #005005;
+    border: none;
     text-decoration: none;
-    display: block;
+    display: inline-block;
     padding: 1em;
     color: white;
     font-size: 2em;
+    outline: none;
+    cursor: pointer;
 }
 
-#nav-container li:hover {
+.navigation-button:hover {
     background-color: #004805;
     cursor: pointer;
 }

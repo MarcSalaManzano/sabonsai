@@ -22,7 +22,6 @@
         <?php require __DIR__ . '/controller/login.php'; ?>
     </section>
 </div>
-
 <footer class="footer">
     <?php require __DIR__ . '/controller/footer.php'; ?>
 </footer>
