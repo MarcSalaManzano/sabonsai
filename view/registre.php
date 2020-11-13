@@ -2,7 +2,7 @@
     <h3> Registra una nova compte</h3>
 </header>
 
-<form action="" method="post">
+<form action="/controller/registre.php" method="post">
 
     <label for="user"> Nom d'usuari: </label> <input type="text" name="user" id="user"
                                                      required>
@@ -27,7 +27,7 @@
                                                   pattern="[0-9]{5}">
     <br/>
 
-    <input type="submit" value="Registrar-se">
+    <input type="submit" value="Registrar-se" name="submit">
 
 
 </form>
