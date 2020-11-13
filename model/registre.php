@@ -3,12 +3,10 @@
 function comprovaRegistre($connexio) {
     try {
         $consulta = $connexio->prepare("SELECT count(*) as num FROM User WHERE Email = :email");
-        echo $_POST['emailReg'];
         $consulta->bindParam(':email', $_POST['emailReg'], PDO::PARAM_STR);
         $consulta->execute();
 
         $result = $consulta->fetch(PDO::FETCH_ASSOC);
-        echo $result['num'];
         if ($result['num'] == 0) {
             return TRUE;
         }
@@ -29,8 +27,8 @@ function registrar($connexio) {
     $consulta->bindParam(":user", $_POST["user"], PDO::PARAM_STR);
     $consulta->bindParam(":email", $_POST["emailReg"], PDO::PARAM_STR);
     $consulta->bindParam(":pass", $hashPass, PDO::PARAM_STR);
-    $consulta->bindParam(":cp", $_POST["adress"], PDO::PARAM_INT);
-    $consulta->bindParam(":address", $_POST["CP"], PDO::PARAM_STR);
+    $consulta->bindParam(":cp", $_POST["CP"], PDO::PARAM_INT);
+    $consulta->bindParam(":address", $_POST["adress"], PDO::PARAM_STR);
     $consulta->bindParam(":city", $_POST["poblation"], PDO::PARAM_STR);
 
     $consulta->execute();
