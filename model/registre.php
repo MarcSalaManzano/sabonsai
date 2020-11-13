@@ -1,18 +1,21 @@
 <?php
 
 function comprovaRegistre($connexio) {
+    try {
+        $consulta = $connexio->prepare("SELECT count(*) as num FROM User WHERE Email = :email");
+        echo $_POST['emailReg'];
+        $consulta->bindParam(':email', $_POST['emailReg'], PDO::PARAM_STR);
+        $consulta->execute();
 
-    $SQL = "SELECT * FROM User WHERE Email = ':email' OR User = ':user'";
-    $consulta = $connexio->prepare($SQL);
-    $consulta->bindPararm(":email", $_POST['emailReg'], PDO::PARAM_STR);
-    $consulta->bindPararm(":user", $_POST['user'], PDO::PARAM_STR);
-    $consulta->execute();
-
-    $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
-
-    if(empty($result)) return true;
-
-    return false;
+        $result = $consulta->fetch(PDO::FETCH_ASSOC);
+        echo $result['num'];
+        if ($result['num'] == 0) {
+            return TRUE;
+        }
+        return FALSE;
+    } catch (PDOException $e) {
+        echo "Error".$e->getMessage();
+    }
 }
 
 
@@ -21,7 +24,7 @@ function registrar($connexio) {
 
     $consulta = $connexio->prepare($SQL);
 
-    $hashPass = password_hash($_POST['passReg']);
+    $hashPass = password_hash($_POST['passReg'], PASSWORD_DEFAULT);
 
     $consulta->bindParam(":user", $_POST["user"], PDO::PARAM_STR);
     $consulta->bindParam(":email", $_POST["emailReg"], PDO::PARAM_STR);
