@@ -55,8 +55,9 @@ section {
     background-color: white;
 }
 
+
 section input[type=submit] {
-    background-color: #60ad5e;
+    padding: 1em 0em;
 }
 
 @media screen and (max-width: 600px) {
@@ -67,5 +68,13 @@ section input[type=submit] {
         'Register'
         'Login'
         'footerLogin';
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    input[type=submit] {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

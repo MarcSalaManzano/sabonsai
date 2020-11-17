@@ -93,3 +93,20 @@ body {
 .footer h2 {
     margin: 0.5em;
 }
+
+.button-style {
+    background-color: #005005; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: background-color 0.4s;
+    cursor: pointer;
+    padding: 1em 1.5em;
+    font-size: 1.5em;
+}
+
+.button-style:hover {
+    background-color: #004805;
+}

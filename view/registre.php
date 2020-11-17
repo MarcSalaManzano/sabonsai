@@ -27,7 +27,7 @@
                                                   pattern="[0-9]{5}">
     <br/>
 
-    <input type="submit" value="Registrar-se" name="submit">
+    <input class="button-style" type="submit" value="Registrar-se" name="submit">
 
 
 </form>

@@ -30,9 +30,7 @@
 
 .products {
     grid-area: products;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
 }
 
 
@@ -99,6 +97,29 @@
 
 .product-buy {
     grid-area: buy;
+}
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.detall-producte {
+    background-color: white;
+    margin: 2em;
+    padding: 2em;
+    display: grid;
+    grid-template-areas:
+        "image descripcio";
+}
+
+.detall-producte .product-detail {
+    font-size: 1.3em;
+}
+
+.detall-producte img {
+    width: 512px;
+    height: 512px;
 }
 
 
