@@ -21,8 +21,9 @@
     <section id="formLogin" style="grid-area: Login">
         <?php require __DIR__ . '/controller/login.php'; ?>
     </section>
+
+    <footer class="footer" style="grid-area: footerLogin">
+        <?php require __DIR__ . '/controller/footer.php'; ?>
+    </footer>
 </div>
-<footer class="footer">
-    <?php require __DIR__ . '/controller/footer.php'; ?>
-</footer>
 </body>

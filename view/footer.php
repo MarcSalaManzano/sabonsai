@@ -1,10 +1,9 @@
 <div>
-    <h2>Contact'ns</h2>
+    <h2>Contacta'ns</h2>
     <p>lorem@ipsum.com</p>
     <p>+34 111.111.111</p>
 </div>
 <div>
-    <a>Home</a>
-    <a>Log In</a>
-    <a>Sobre Nosaltres</a>
+    <a href="../index.php">Home</a>
+    <a href="?accio=login">Log In</a>
 </div>
