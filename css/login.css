@@ -5,7 +5,8 @@
     grid-template-areas:
         'Head Head'
         'Register Login'
-        'Register Login';
+        'Register Login'
+        'footerLogin footerLogin';
 }
 
 #layoutLogin section {
@@ -56,4 +57,15 @@ section {
 
 section input[type=submit] {
     background-color: #60ad5e;
+}
+
+@media screen and (max-width: 600px) {
+    #layoutLogin {
+        display: grid;
+        grid-template-areas:
+        'Head'
+        'Register'
+        'Login'
+        'footerLogin';
+    }
 }
