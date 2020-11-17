@@ -16,7 +16,9 @@
     <header id="header-container" class="header">
         <?php require __DIR__.'/controller/header.php'; ?>
     </header>
-    <section class="carrousel"> Test </section>
+    <section class="carrousel">
+
+    </section>
     <nav class="nav">
         <?php require __DIR__.'/controller/categories.php'; ?>
     </nav>
@@ -24,7 +26,10 @@
         <?php
         if(isset($_GET['categoria'])) {
             require __DIR__ . '/controller/llista_productes.php';
+        } else {
+            require __DIR__ . '/view/portada.php';
         }
+
         ?>
     </section>
     <footer class="footer">
