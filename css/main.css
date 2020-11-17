@@ -28,13 +28,19 @@ body {
     list-style: none;
 }
 
-#header-container .logo {
+#header-container .logo img{
     height: 6em;
     width: auto;
     margin: 0.3em 0.3em 0.3em 1em;
+
 }
 
-#header-container a {
+#header-container a.logo {
+    font-size: 1em;
+
+}
+
+#header-container ul a {
     text-decoration: none;
     display: block;
     padding: 1em;
@@ -74,10 +80,16 @@ body {
     justify-content: center;
 }
 
-.footer p,a {
+.footer a {
+    color: #eee;
+    margin: 0.5em;
+}
+
+.footer p {
+    margin: 0.5em;
     color: #eee;
 }
 
-.footer p,a,h2 {
+.footer h2 {
     margin: 0.5em;
 }
