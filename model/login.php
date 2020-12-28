@@ -20,6 +20,6 @@ function comprovaLogin($connexio)
 }
 
 function logear($connexio) {
-    echo "<script type='text/javascript'> alert('Has logiado'); window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php'); </script>";
+    echo "<script type='text/javascript'> alert('Has logiado');</script>";
 }
 ?>
