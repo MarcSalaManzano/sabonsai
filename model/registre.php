@@ -34,4 +34,6 @@ function registrar($connexio) {
     $consulta->execute();
 }
 
+
+
 ?>

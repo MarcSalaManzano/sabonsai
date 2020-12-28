@@ -3,24 +3,23 @@
 
 function comprovaLogin($connexio)
 {
-    $SQL = "SELECT * FROM User WHERE Email = :email AND Password = :pass";
+    $SQL = "SELECT * FROM User WHERE Email = :email";
 
     $consulta = $connexio->prepare($SQL);
 
-    $hashPass = password_hash($_POST['passLogin']);
-
     $consulta->bindParam(':email', $_POST['emailLogin'], PDO::PARAM_STR);
-    $consulta->bindParam(':pass', $hashPass, PDO::PARAM_STR);
     $consulta->execute();
 
-    $result = $consulta->fetchAll(PDO::FETCH_ASSOC);
+    $result = $consulta->fetch(PDO::FETCH_ASSOC);
 
     if (empty($result)) return false;
 
-    return true;
+    else if(password_verify($_POST['passLogin'], $result['Password']))
+        return true;
+
 }
 
 function logear($connexio) {
-echo "lorem ipsum";
+    echo "<script type='text/javascript'> alert('Has logiado'); window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php'); </script>";
 }
 ?>
