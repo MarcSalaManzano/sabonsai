@@ -1,7 +1,7 @@
 <?php
-
 function comprovaRegistre($connexio) {
     try {
+
         $consulta = $connexio->prepare("SELECT count(*) as num FROM User WHERE Email = :email");
         $consulta->bindParam(':email', $_POST['emailReg'], PDO::PARAM_STR);
         $consulta->execute();
