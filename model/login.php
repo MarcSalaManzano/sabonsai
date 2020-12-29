@@ -30,6 +30,13 @@ function logear($connexio) {
     $result = $consulta->fetch(PDO::FETCH_ASSOC);
 
     $_SESSION['user_id'] = $result['ID'];
+    $_SESSION['username'] = $result['Name'];
+    $_SESSION['mail'] = $result['Email'];
+    $_SESSION['CP'] = $result['Posta_Code'];
+    $_SESSION['add'] = $result['Address'];
+    $_SESSION['city'] = $result['City'];
+    $_SESSION['products'] = [];
+    $_SESSION['prices'] = [];
     echo '<script>';
     echo 'console.log('. json_encode( $_SESSION['user_id'] ) .')';
     echo '</script>';
