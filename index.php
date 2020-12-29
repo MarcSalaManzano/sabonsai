@@ -2,6 +2,8 @@
 
 @$accio = $_GET['accio'];
 
+session_start();
+
 switch($accio) {
     case 'login':
         include __DIR__.'/resource_login.php';
