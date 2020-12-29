@@ -6,6 +6,7 @@ if(isset($_POST['submit'])) {
 
     if(!filter_var($_POST['emailReg'], FILTER_VALIDATE_EMAIL)) {
         echo "<script type='text/javascript'> alert('Registre no vàlid, correu mal formatat'); window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=login'); </script>";
+        exit;
     }
 
     $connexio = connectaBD();

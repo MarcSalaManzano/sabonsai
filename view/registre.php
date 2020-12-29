@@ -2,7 +2,7 @@
     <h3> Registra una nova compte</h3>
 </header>
 
-<form action="/controller/registre.php" method="post">
+<form action="index.php?accio=registre" method="post">
 
     <label for="user"> Nom d'usuari: </label> <input type="text" name="user" id="user"
                                                      required>

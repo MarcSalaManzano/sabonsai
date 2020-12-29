@@ -20,6 +20,18 @@ function comprovaLogin($connexio)
 }
 
 function logear($connexio) {
-    echo "<script type='text/javascript'> alert('Has logiado'); window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php'); </script>";
+    $SQL = "SELECT * FROM User WHERE Email = :email";
+
+    $consulta = $connexio->prepare($SQL);
+
+    $consulta->bindParam(':email', $_POST['emailLogin'], PDO::PARAM_STR);
+    $consulta->execute();
+
+    $result = $consulta->fetch(PDO::FETCH_ASSOC);
+
+    $_SESSION['user_id'] = $result['ID'];
+    echo '<script>';
+    echo 'console.log('. json_encode( $_SESSION['user_id'] ) .')';
+    echo '</script>';
 }
 ?>

@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 
-#header-container ul{
+#header-container>ul{
     display: flex;
     margin: 0;
     align-items: stretch;
@@ -46,6 +46,17 @@ body {
     padding: 1em;
     color: white;
     font-size: 2em;
+}
+
+.dropdown {
+    list-style: none;
+    display: none;
+    padding: 0;
+
+}
+
+.dropdown>li {
+    padding: 0;
 }
 
 #header-container li:hover {
