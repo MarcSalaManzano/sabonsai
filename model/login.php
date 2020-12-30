@@ -35,8 +35,10 @@ function logear($connexio) {
     $_SESSION['CP'] = $result['Posta_Code'];
     $_SESSION['add'] = $result['Address'];
     $_SESSION['city'] = $result['City'];
-    $_SESSION['products'] = [];
-    $_SESSION['prices'] = [];
+    if(!isset($_SESSION['products']))
+        $_SESSION['products'] = [];
+    if(!isset($_SESSION['prices']))
+        $_SESSION['prices'] = [];
     echo '<script>';
     echo 'console.log('. json_encode( $_SESSION['user_id'] ) .')';
     echo '</script>';
