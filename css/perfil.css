@@ -1,0 +1,40 @@
+#perfil-inf {
+    padding: 2em;
+    display: flex;
+    justify-content: center
+}
+.profile-container {
+    background-color: white;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 256px auto;
+    padding: 1em;
+}
+
+.profile-container>h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.profile-container>img {
+    max-width: 256px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.profile-container>.name-profile {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.profile-container>.mail-profile {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.profile-container>.adresa-profile {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}

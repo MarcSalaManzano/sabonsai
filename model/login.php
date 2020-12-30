@@ -32,7 +32,7 @@ function logear($connexio) {
     $_SESSION['user_id'] = $result['ID'];
     $_SESSION['username'] = $result['Name'];
     $_SESSION['mail'] = $result['Email'];
-    $_SESSION['CP'] = $result['Posta_Code'];
+    $_SESSION['CP'] = $result['Postal_Code'];
     $_SESSION['add'] = $result['Address'];
     $_SESSION['city'] = $result['City'];
     $_SESSION['products'] = [];
