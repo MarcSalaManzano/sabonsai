@@ -33,6 +33,8 @@ switch($accio) {
     case 'modificantPerfil':
         include __DIR__.'/resource_modificantPerfil.php';
         break;
+    case 'buidarCarro':
+        include __DIR__ . '/resource_buidarCarro.php';
     default:
         include __DIR__.'/resource_portada.php';
         break;
