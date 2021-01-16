@@ -13,7 +13,7 @@
     <?php } ?>
     <li><a href="?accio=carro" class="icon"><img src="media/cart-59-64.png"></a></li>
     <?php if(isset($_SESSION['user_id'])) { ?>
-    <li> #Productes: <?php echo count($_SESSION['products']); ?> Import Total: <?php echo array_sum($_SESSION['prices']); ?> </li>
+    <li> #Productes: <?php echo $_SESSION['nProductesTotal']; ?> Import Total: <?php echo $_SESSION['totalPrice']; ?> </li>
     <?php } ?>
 </ul>
 <script>

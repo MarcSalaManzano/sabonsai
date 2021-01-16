@@ -35,10 +35,15 @@ function logear($connexio) {
     $_SESSION['CP'] = $result['Postal_Code'];
     $_SESSION['add'] = $result['Address'];
     $_SESSION['city'] = $result['City'];
-    if(!isset($_SESSION['products']))
+    if(!isset($_SESSION['nProductesTotal']))
+        $_SESSION['nProductesTotal'] = 0;
+    if(!isset($_SESSION['totalPrice']))
+        $_SESSION['totalPrice'] = 0;
+    if(isset($_SESSION['products']))
         $_SESSION['products'] = [];
-    if(!isset($_SESSION['prices']))
-        $_SESSION['prices'] = [];
+
+
+
     echo '<script>';
     echo 'console.log('. json_encode( $_SESSION['user_id'] ) .')';
     echo '</script>';
