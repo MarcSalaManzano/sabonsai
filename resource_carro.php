@@ -15,7 +15,7 @@
     </header>
 
     <section>
-        <?php require __DIR__ . '/view/cabas.php'; ?>
+        <?php require __DIR__ . '/controller/cabasPage.php'; ?>
     </section>
 
     <footer class="footer">
