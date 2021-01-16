@@ -1,6 +1,6 @@
 <div class="profile-container">
     <h1>El meu perfil</h1>
-    <img src="media/testImage.png"/>
+    <img src=" <?php echo $filesPublicPath.$_SESSION['user_id'] ?> "/>
     <div class="name-profile">
         <h3>Nom:</h3>
         <p> <?php echo $_SESSION['username'] ?> </p>
