@@ -27,6 +27,12 @@ switch($accio) {
     case 'registre':
         include __DIR__.'/resource_registre.php';
         break;
+    case 'modificaPerfil':
+        include __DIR__.'/resource_modificaPerfil.php';
+        break;
+    case 'modificantPerfil':
+        include __DIR__.'/resource_modificantPerfil.php';
+        break;
     default:
         include __DIR__.'/resource_portada.php';
         break;

@@ -17,4 +17,7 @@
         <h3>Ciutat:</h3>
         <p> <?php echo $_SESSION['city'] ?> </p>
     </div>
+    <div class="button-profile">
+        <a href="index.php?accio=modificaPerfil">Modifica perfil</a>
+    </div>
 </div>
