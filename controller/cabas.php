@@ -11,8 +11,15 @@ if(isset($_GET['producte'])) {
     $connexio = connectaBD();
     $detalls = getProducteDetellat($connexio, $producteSeleccionat);
 
-    array_push($_SESSION['products'], $producteSeleccionat);
-    array_push($_SESSION['prices'], $detalls['Price']);
+    $_SESSION['nProductesTotal']++;
+    $_SESSION['totalPrice'] += $detalls['Price'];
+
+    if(isset($_SESSION['products'][$producteSeleccionat]))
+        $_SESSION['products'][$producteSeleccionat]++;
+    else
+        $_SESSION['products'][$producteSeleccionat] = 1;
+
+
     print_r($_SESSION);
     require __DIR__ . '/../view/header.php';
 }
