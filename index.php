@@ -1,5 +1,6 @@
 <?php
-
+$fotosUsuarisAbsolutePath = '/home/TDIW/tdiw-e8/public_html/fotos-usuaris/';
+$filesPublicPath = '/fotos-usuaris/';
 @$accio = $_GET['accio'];
 
 session_start();
