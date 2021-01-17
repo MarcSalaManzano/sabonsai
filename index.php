@@ -4,6 +4,12 @@ $filesPublicPath = '/fotos-usuaris/';
 @$accio = $_GET['accio'];
 
 session_start();
+if(!isset($_SESSION['nProductesTotal']))
+    $_SESSION['nProductesTotal'] = 0;
+if(!isset($_SESSION['totalPrice']))
+    $_SESSION['totalPrice'] = 0;
+if(!isset($_SESSION['products']))
+    $_SESSION['products'] = [];
 
 switch($accio) {
     case 'login':
@@ -36,6 +42,7 @@ switch($accio) {
         break;
     case 'buidarCarro':
         include __DIR__ . '/resource_buidarCarro.php';
+        break;
     default:
         include __DIR__.'/resource_portada.php';
         break;
