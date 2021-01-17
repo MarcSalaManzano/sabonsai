@@ -11,5 +11,10 @@
             </li>
         <?php } ?>
     </ul>
+    <?php if(!isset($_SESSION['user_id'])) { ?>
+        <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=login')">Compra</button>
+    <?php } else { ?>
+        <button type="button" onclick="">Compra</button>
+    <?php } ?>
 
 </div>

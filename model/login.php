@@ -35,12 +35,6 @@ function logear($connexio) {
     $_SESSION['CP'] = $result['Postal_Code'];
     $_SESSION['add'] = $result['Address'];
     $_SESSION['city'] = $result['City'];
-    if(!isset($_SESSION['nProductesTotal']))
-        $_SESSION['nProductesTotal'] = 0;
-    if(!isset($_SESSION['totalPrice']))
-        $_SESSION['totalPrice'] = 0;
-    if(isset($_SESSION['products']))
-        $_SESSION['products'] = [];
 
 
 
