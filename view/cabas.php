@@ -1,6 +1,7 @@
 
 
 <div id="cabas-container">
+    <?php if(!empty($_SESSION['products'])) { ?>
     <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=buidarCarro')">Buidar cabas</button>
     <ul>
         <?php foreach ($arrayDetalls as $detall) { ?>
@@ -14,7 +15,9 @@
     <?php if(!isset($_SESSION['user_id'])) { ?>
         <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=login')">Compra</button>
     <?php } else { ?>
-        <button type="button" onclick="">Compra</button>
+        <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=procesaCompra')">Compra</button>
     <?php } ?>
-
+    <?php } else { ?>
+    <p>El cabàs està buit, compra algún bonsai i torna aquí.</p>
+    <?php } ?>
 </div>

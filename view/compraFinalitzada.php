@@ -1,0 +1,1 @@
+<p>La teva compra s'ha realitzat correctament.</p>

@@ -22,4 +22,15 @@ function getProducteDetellat($connexio, $producte) {
         echo "Error: ".$e->getMessage();
     }
 }
+
+function getDetallsCabas($connexio) {
+    $detallat = [];
+    foreach($_SESSION['products'] as $product => $quantity) {
+        $detalls = getProducteDetellat($connexio, $product);
+        $detallat[] = $detalls;
+    }
+    return $detallat;
+}
+
+
 ?>
