@@ -1,6 +1,5 @@
 <?php
-$fotosUsuarisAbsolutePath = '/home/TDIW/tdiw-e8/public_html/fotos-usuaris/';
-$filesPublicPath = '/fotos-usuaris/';
+
 @$accio = $_GET['accio'];
 
 session_start();
@@ -36,6 +35,7 @@ switch($accio) {
         break;
     case 'buidarCarro':
         include __DIR__ . '/resource_buidarCarro.php';
+        break;
     default:
         include __DIR__.'/resource_portada.php';
         break;
