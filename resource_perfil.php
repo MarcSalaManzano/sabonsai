@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes"/>
-    <title>Sabonsai | Home</title>
+    <title>Sabonsai | Perfil</title>
     <!--Style-->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/perfil.css" rel="stylesheet">
