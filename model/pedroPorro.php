@@ -40,4 +40,11 @@ function registraCompra($connexio, $productes) {
 
 }
 
+function buidarCarro() {
+    $_SESSION['nProductesTotal'] = 0;
+    $_SESSION['totalPrice'] = 0;
+    $_SESSION['products'] = [];
+
+}
+
 ?>
