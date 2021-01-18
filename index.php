@@ -52,6 +52,12 @@ switch($accio) {
     case 'compraBien':
         include __DIR__ . '/resource_compraBien.php';
         break;
+    case 'procesaCompra':
+        include __DIR__ . '/resource_procesaCompra.php';
+        break;
+    case 'compres':
+        include __DIR__ . '/resource_llistatCompres.php';
+        break;
     default:
         include __DIR__.'/resource_portada.php';
         break;

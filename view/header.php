@@ -6,7 +6,7 @@
     <li class="dropdown-trigger"><a><?php echo $_SESSION['username'] ?></a>
         <ul class="dropdown">
             <li><a href="?accio=perfil">El meu compte</a></li>
-            <li><a href="#">Les meves compres</a></li>
+            <li><a href="?accio=compres">Les meves compres</a></li>
             <li><a href="?accio=logout">Tanca sessió</li></a>
         </ul>
     </li>
