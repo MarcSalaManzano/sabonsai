@@ -13,7 +13,7 @@
     <?php } ?>
     <li><a href="?accio=carro" class="icon"><img src="media/cart-59-64.png"></a></li>
     <?php if(isset($_SESSION['user_id'])) { ?>
-    <li> #Productes: <?php echo $_SESSION['nProductesTotal']; ?> Import Total: <?php echo $_SESSION['totalPrice']; ?> </li>
+        <li>  <p> Número de productes: <?php echo $_SESSION['nProductesTotal']; ?> <br /> Import Total: <?php echo $_SESSION['totalPrice']; ?> </p> </li>
     <?php } ?>
 </ul>
 <script>
