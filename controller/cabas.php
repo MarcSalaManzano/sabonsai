@@ -19,8 +19,6 @@ if(isset($_GET['producte'])) {
     else
         $_SESSION['products'][$producteSeleccionat] = 1;
 
-
-    print_r($_SESSION);
     require __DIR__ . '/../view/header.php';
 }
 ?>
