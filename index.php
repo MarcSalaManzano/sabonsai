@@ -26,6 +26,9 @@ switch($accio) {
     case 'producteDetallat':
         include __DIR__ . '/resource_producteDetallat.php';
         break;
+    case 'productes':
+        include __DIR__ . '/resource_productes.php';
+        break;
     case 'afegirProducte':
         include __DIR__.'/resource_afegirProducte.php';
         break;
