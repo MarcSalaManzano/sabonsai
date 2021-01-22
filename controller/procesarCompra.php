@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/../model/connectaBD.php';
 require_once __DIR__ . '/../model/productes.php';
-require_once __DIR__ . '/../model/pedroPorro.php';
+require_once __DIR__ . '/../model/carro.php';
 
 if(isset($_SESSION['products']) && !empty($_SESSION['products'])) {
     $connexio = connectaBD();

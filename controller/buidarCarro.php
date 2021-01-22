@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../model/pedroPorro.php';
+require_once __DIR__ . '/../model/carro.php';
 
 buidarCarro();
 
