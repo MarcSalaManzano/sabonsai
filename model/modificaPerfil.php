@@ -28,5 +28,6 @@ function actualitzaImatge($connexio, $fotosUsuarisAbsolutePath) {
     move_uploaded_file($_FILES['profile_image']['tmp_name'], $file_name);
     $SQL = "UPDATE User SET Image=? WHERE Email=?";
     $connexio->prepare($SQL)->execute([$_SESSION['user_id'], $email]);
+    $_SESSION['image'] = $_SESSION['user_id'];
 }
 ?>

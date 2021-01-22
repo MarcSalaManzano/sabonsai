@@ -8,7 +8,7 @@
     <section class="section-compra">
         <?php foreach ($compra['linies'] as $linia) { ?>
             <div class="info-compra">
-                <img src="/../media/testImage.png">
+                <img src=" <?php echo $bonsaisPublicPath.$linia['Image'] ?> ">
                 <h1> <?php echo $linia['Name'] ?> </h1>
                 <p class="quantitat"> Quantitat total: <?php echo $linia['Quantity'] ?> </p>
                 <p class="unitari"> Preu unitari: <?php echo $linia['Unit_Price'] ?> </p>

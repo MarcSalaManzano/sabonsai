@@ -18,7 +18,7 @@ function comprovaRegistre($connexio) {
 
 
 function registrar($connexio) {
-    $SQL = "INSERT INTO User(Name, Email, Password, Postal_code, Address, City) VALUES (:user, :email, :pass, :cp, :address, :city)";
+    $SQL = 'INSERT INTO User(Name, Email, Password, Postal_code, Address, City, Image) VALUES (:user, :email, :pass, :cp, :address, :city, "default.png")';
 
     $consulta = $connexio->prepare($SQL);
 

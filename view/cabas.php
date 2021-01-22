@@ -5,7 +5,7 @@
     <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=buidarCarro')" style="grid-area: buidaButton">Buidar cabas</button>
     <ul>
         <?php foreach ($arrayDetalls as $detall) { ?>
-            <li> <img src="media/testImage.png" width="300px" style="grid-area: img"> <br />
+            <li> <img src=" <?php echo $bonsaisPublicPath.$detall['Image'] ?> " width="300px" style="grid-area: img"> <br />
                 <div style="grid-area: text">
                 Nom: <?php echo $detall['Name'];?>  <br/>
                 Preu: <?php echo $detall['Price']?>  <br />

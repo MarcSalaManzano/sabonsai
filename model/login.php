@@ -35,6 +35,7 @@ function logear($connexio) {
     $_SESSION['CP'] = $result['Postal_Code'];
     $_SESSION['add'] = $result['Address'];
     $_SESSION['city'] = $result['City'];
+    $_SESSION['image'] = $result['Image'];
 
 
 
