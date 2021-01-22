@@ -23,6 +23,12 @@ switch($accio) {
     case 'perfil':
         include __DIR__.'/resource_perfil.php';
         break;
+    case 'producteDetallat':
+        include __DIR__ . '/resource_producteDetallat.php';
+        break;
+    case 'afegirProducte':
+        include __DIR__.'/resource_afegirProducte.php';
+        break;
     case 'carro':
         include __DIR__.'/resource_carro.php';
         break;
@@ -52,12 +58,6 @@ switch($accio) {
         break;
     case 'compraBien':
         include __DIR__ . '/resource_compraBien.php';
-        break;
-    case 'procesaCompra':
-        include __DIR__ . '/resource_procesaCompra.php';
-        break;
-    case 'compres':
-        include __DIR__ . '/resource_llistatCompres.php';
         break;
     default:
         include __DIR__.'/resource_portada.php';
