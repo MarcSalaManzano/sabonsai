@@ -5,5 +5,11 @@
 </div>
 <div>
     <a href="../index.php">Home</a>
-    <a href="?accio=login">Log In</a>
+    <?php if(!isset($_SESSION['user_id'])) { ?>
+        <a href="?accio=login">Log In</a>
+    <?php } else { ?>
+        <a href="?accio=perfil">El meu compte</a>
+        <a href="?accio=compres">Les meves compres</a>
+        <a href="?accio=logout">Tanca sessió</a>
+    <?php } ?>
 </div>
