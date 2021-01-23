@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<div >
+<div>
     <header id="header-container" style="grid-area: Head">
         <?php require __DIR__ . '/controller/header.php'; ?>
     </header>
