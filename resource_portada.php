@@ -24,14 +24,7 @@
         <?php require __DIR__.'/controller/categories.php'; ?>
     </nav>
     <section id="productes" class="products">
-        <?php
-        if(isset($_GET['categoria'])) {
-            require __DIR__ . '/controller/llista_productes.php';
-        } else {
-            require __DIR__ . '/view/portada.php';
-        }
-
-        ?>
+        <?php require __DIR__ . '/controller/llista_productes.php'; ?>
     </section>
     <footer class="footer">
         <?php require __DIR__.'/controller/footer.php'; ?>

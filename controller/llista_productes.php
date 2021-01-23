@@ -11,6 +11,8 @@ if(isset($_GET['producte'])) {
     $connexio = connectaBD();
     $productes = getProductes($connexio, $categoriaSeleccionada);
     require_once __DIR__.'/../view/productes.php';
+} else {
+    require __DIR__ . '/../view/portada.php';
 }
 
 ?>
