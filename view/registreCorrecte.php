@@ -1,0 +1,1 @@
+<p>Registro completado correctamente, logueate para poder comprar nuestros bonsais</p>

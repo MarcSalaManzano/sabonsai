@@ -13,15 +13,10 @@ if(!isset($_SESSION['products']))
     $_SESSION['products'] = [];
 
 switch($accio) {
+    case 'registre':
     case 'logear':
-        include __DIR__.'/resource_logear.php';
-        break;
     case 'login':
-        if(!isset($_SESSION['user_id'])) {
-            include __DIR__ . '/resource_login.php';
-        } else {
-            header('location: http://tdiw-e8.deic-docencia.uab.cat/index.php');
-        }
+        include __DIR__ . '/resource_login.php';
         break;
     case 'perfil':
         include __DIR__.'/resource_perfil.php';
@@ -40,9 +35,6 @@ switch($accio) {
         break;
     case 'logout':
         include __DIR__.'/resource_logout.php';
-        break;
-    case 'registre':
-        include __DIR__.'/resource_registre.php';
         break;
     case 'modificaPerfil':
         include __DIR__.'/resource_modificaPerfil.php';

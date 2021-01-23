@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['submit'])) {
+if(isset($_POST['submitLogin'])) {
     require_once __DIR__ . '/../model/connectaBD.php';
     require_once __DIR__ . '/../model/login.php';
     $connexio = connectaBD();
