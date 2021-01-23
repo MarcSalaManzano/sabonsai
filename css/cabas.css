@@ -1,31 +1,21 @@
-#layoutCarro {
-    display: grid;
-    grid-template-areas:
-        'Head Head'
-        'buidaButton'
-        'img text'
-        'compraButton'
-        'footer footer';
 
-    font-size: 1.5em;
-    font-family: sans-serif;
-    padding:25px;
-}
-
-#cabas-container ul {
-    list-style: none;
-}
-
-button {
-    margin-left: 20px;
-    margin-top: 5px;
+#layoutCarro button {
+    margin-bottom: 5px;
     background-color: #005005;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    position: relative;
+    left: 40%;
+}
+
+#layoutCarro {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin: 10px 25%;
+    padding: 20px;
 }

@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 
 require_once __DIR__.'/../model/connectaBD.php';
 require_once __DIR__.'/../model/productes.php';

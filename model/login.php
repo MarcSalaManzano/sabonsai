@@ -14,7 +14,7 @@ function comprovaLogin($connexio)
 
     if (empty($result)) return false;
 
-    else if(password_verify($_POST['passLogin'], $result['Password']))
+    elseif(password_verify($_POST['passLogin'], $result['Password']))
         return true;
 
 }

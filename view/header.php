@@ -11,6 +11,6 @@
         </ul>
     </li>
     <?php } ?>
-    <li><a href="?accio=carro" class="icon"><img src="media/cart-59-64.png"></a></li>
-    <li>  <p> Número de productes: <?php echo $_SESSION['nProductesTotal']; ?> <br /> Import Total: <?php echo $_SESSION['totalPrice']; ?> </p> </li>
+    <li><a href="?accio=carro" class="icon"> <img src="media/cart-59-64.png" heigh> Número de productes: <?php echo $_SESSION['nProductesTotal']; ?>
+                                                                                    Import Total: <?php echo $_SESSION['totalPrice']; ?> </a> </li>
 </ul>

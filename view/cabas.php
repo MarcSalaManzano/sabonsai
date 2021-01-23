@@ -1,24 +1,37 @@
 
 
 <div id="cabas-container">
+
     <?php if(!empty($_SESSION['products'])) { ?>
-    <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=buidarCarro')" style="grid-area: buidaButton">Buidar cabas</button>
-    <ul>
+
+    <article class="container-compra">
+        <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=buidarCarro')">Buidar cabas</button>
+        <br />
+        <section class="section-compra">
+
         <?php foreach ($arrayDetalls as $detall) { ?>
-            <li> <img src=" <?php echo $bonsaisPublicPath.$detall['Image'] ?> " width="300px" style="grid-area: img"> <br />
-                <div style="grid-area: text">
-                Nom: <?php echo $detall['Name'];?>  <br/>
-                Preu: <?php echo $detall['Price']?>  <br />
-                Quantitat: <?php echo $_SESSION['products'][$detall['ID']]; ?>
-                </div>
-            </li>
+            <div class="info-compra">
+
+                <img src=" <?php echo $bonsaisPublicPath.$detall['Image'] ?> " width="300px">
+                <h1> Nom: <?php echo $detall['Name'];?> </h1>
+                <p class="total"> Preu: <?php echo $detall['Price'] * $_SESSION['products'][$detall['ID']]?> </p>
+                <p class="unitari"> Preu unitari: <?php echo $detall['Price'] ?> </p>
+                <p class="quantitat"> Quantitat: <?php echo $_SESSION['products'][$detall['ID']]; ?> </p>
+
+            </div>
+            <hr>
+
         <?php } ?>
-    </ul>
-    <?php if(!isset($_SESSION['user_id'])) { ?>
-        <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=login')" style="grid-area: compraButton">Compra</button>
-    <?php } else { ?>
-        <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=procesaCompra')" style="grid-area: compraButton">Compra</button>
-    <?php } ?>
+
+        </section>
+        <?php if(!isset($_SESSION['user_id'])) { ?>
+            <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=login')" >Compra</button>
+        <?php } else { ?>
+            <button type="button" onclick="window.location.replace('http://tdiw-e8.deic-docencia.uab.cat/index.php?accio=procesaCompra')" >Compra</button>
+        <?php } ?>
+    </article>
+
+
     <?php } else { ?>
     <p>El cabàs està buit, compra algún bonsai i torna aquí.</p>
     <?php } ?>
