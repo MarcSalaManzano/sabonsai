@@ -14,12 +14,3 @@
     <li><a href="?accio=carro" class="icon"><img src="media/cart-59-64.png"></a></li>
     <li>  <p> Número de productes: <?php echo $_SESSION['nProductesTotal']; ?> <br /> Import Total: <?php echo $_SESSION['totalPrice']; ?> </p> </li>
 </ul>
-<script>
-$(document).ready(function(){
-    $(".dropdown-trigger").hover(function(){
-        $(".dropdown", this).slideDown(100);
-    }, function() {
-        $(".dropdown", this).stop().slideUp(100);
-    });
-});
-</script>

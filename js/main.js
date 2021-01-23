@@ -1,8 +1,7 @@
-$(document).ready(function() {
-  $('.navigation-button').click(function() {
-      var id = $(this).attr('id');
-      $.ajax({url: "?accio=productes&categoria=" + id, success:function(result) {
-          $("#productes").html(result);
-      }});
-  });
+$(document).ready(function(){
+    $(".dropdown-trigger").hover(function(){
+        $(".dropdown", this).slideDown(100);
+    }, function() {
+        $(".dropdown", this).stop().slideUp(100);
+    });
 });
