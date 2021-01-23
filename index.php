@@ -13,6 +13,9 @@ if(!isset($_SESSION['products']))
     $_SESSION['products'] = [];
 
 switch($accio) {
+    case 'logear':
+        include __DIR__.'/resource_logear.php';
+        break;
     case 'login':
         if(!isset($_SESSION['user_id'])) {
             include __DIR__ . '/resource_login.php';
@@ -34,9 +37,6 @@ switch($accio) {
         break;
     case 'carro':
         include __DIR__.'/resource_carro.php';
-        break;
-    case 'logear':
-        include __DIR__.'/controller/login.php'; //TODO: A lo mejor se tiene que cambiar a recurso
         break;
     case 'logout':
         include __DIR__.'/resource_logout.php';
