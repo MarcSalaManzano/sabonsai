@@ -3,25 +3,30 @@ $(document).ready(function() {
         var id = $(this).attr('id');
         $.ajax({url: "?accio=productes&categoria=" + id, success:function(result) {
                 $("#productes").html(result);
+                detallarProductesListener();
+                afegirProducteACabasListener();
             }});
     });
 });
 
-$(document).ready(function() {
+function afegirProducteACabasListener() {
+    $('.product-buy').click(function() {
+        var id = $(this).attr('id');
+        var realId = id.replace('comprarProducte', '');
+        $.ajax({url: "?accio=afegirProducte&producte=" + realId, success:function(result) {
+                $("#header-container").html(result);
+            }});
+    });
+}
+
+
+function detallarProductesListener() {
     $('.product-name').click(function() {
         var id = $(this).attr('id');
         var realId = id.replace('producte', '');
         $.ajax({url: "?accio=producteDetallat&producte=" + realId, success:function(result) {
                 $("#productes").html(result);
+                afegirProducteACabasListener();
             }});
     });
-});
-
-$(document).ready(function() {
-    $('.product-buy').click(function() {
-        var id = $(this).attr('id');
-        $.ajax({url: "?accio=afegirProducte&producte=" + id, success:function(result) {
-                $("#header-container").html(result);
-            }});
-    });
-});
+}

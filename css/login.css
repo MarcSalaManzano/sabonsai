@@ -19,6 +19,9 @@ body {
     background-color: #eaeded;
 }
 
+span {
+    color: red;
+}
 
 input:focus {
     border: 1px solid #005005;

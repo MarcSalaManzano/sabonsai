@@ -1,1 +1,1 @@
-<p>La teva compra s'ha realitzat correctament.</p>
+<p>La compra se ha realizado correctamente.</p>
