@@ -4,8 +4,10 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes"/>
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,400i,700" rel="stylesheet"/>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/cabas.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+
 
 </head>
 
@@ -15,8 +17,8 @@
         <?php require __DIR__ . '/controller/header.php'; ?>
     </header>
 
-    <section>
-        <?php require __DIR__ . '/view/compraFinalitzada.php'; ?>
+    <section id="section-compraBien">
+        <p>La compra se ha realizado correctamente.</p>
     </section>
 
     <footer class="footer">

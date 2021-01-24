@@ -2,13 +2,13 @@
 
 function registraCompra($connexio, $productes) {
     try {
-        $sql = 'INSERT INTO Purchase(User_ID, Total_Price, Date) VALUE(:userid, :price, :date)';
+        $sql = 'INSERT INTO Purchase(User_ID, Total_Price, Date, Total_Quantity) VALUE(:userid, :price, :date, :totalQuantity)';
         $consulta = $connexio->prepare($sql);
         $consulta->bindParam(":userid", $_SESSION["user_id"], PDO::PARAM_INT);
         $consulta->bindParam(":price", $_SESSION["totalPrice"], PDO::PARAM_STR);
         $date = date('Y-m-d H:i:s', time());
         $consulta->bindParam(":date", $date, PDO::PARAM_STR);
-
+        $consulta->bindParam(":totalQuantity", $_SESSION["nProductesTotal"], PDO::PARAM_INT);
         $consulta->execute();
 
         $sql = 'SELECT ID FROM Purchase WHERE User_ID = :userid AND Total_Price = :price AND Date = :date';

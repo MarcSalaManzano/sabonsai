@@ -3,6 +3,7 @@
     <header class="header-compra">
         <p>Compra realitzada el: <?php echo $compra['Date'] ?></p>
         <p>Precio total: <?php echo $compra['Total_Price'] ?></p>
+        <p>Cantidad total: <?php echo $compra['Total_Quantity'] ?></p>
     </header>
     <section class="section-compra">
         <?php foreach ($compra['linies'] as $linia) { ?>

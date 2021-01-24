@@ -1,1 +1,0 @@
-<p>La compra se ha realizado correctamente.</p>
