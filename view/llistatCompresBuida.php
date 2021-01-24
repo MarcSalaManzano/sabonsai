@@ -1,0 +1,1 @@
+<p class="compra-vacia">Aún no has comprado ningún bonsai</p>

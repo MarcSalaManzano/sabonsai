@@ -6,7 +6,7 @@
 <div>
     <a href="../index.php">Inicio</a>
     <?php if(!isset($_SESSION['user_id'])) { ?>
-        <a href="?accio=login">Log In</a>
+        <a href="?accio=login">Log In/Registro</a>
     <?php } else { ?>
         <a href="?accio=perfil">Mi cuenta</a>
         <a href="?accio=compres">Mis compras</a>

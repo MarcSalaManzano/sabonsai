@@ -8,5 +8,9 @@ for ($i = 0; $i < count($compres); ++$i) {
     $linies = carregaLinias($connexio, $compres[$i]['ID']);
     $compres[$i]['linies'] = $linies;
 }
-include __DIR__.'/../view/llistatCompres.php';
+if(empty($compres)) {
+    include __DIR__ . '/../view/llistatCompresBuida.php';
+} else {
+    include __DIR__ . '/../view/llistatCompres.php';
+}
 ?>

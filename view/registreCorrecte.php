@@ -1,1 +1,1 @@
-<p>Registro completado correctamente, logueate para poder comprar nuestros bonsais</p>
+<p class="registe-correcte">Registro completado correctamente, logueate para poder comprar nuestros bonsais</p>

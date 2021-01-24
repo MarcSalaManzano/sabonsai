@@ -21,6 +21,7 @@ body {
 
 span {
     color: red;
+    font-size: 1.1em;
 }
 
 input:focus {
@@ -80,4 +81,9 @@ section input[type=submit] {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.registe-correcte {
+    font-size: 1.5em;
+    padding: 10px;
 }
